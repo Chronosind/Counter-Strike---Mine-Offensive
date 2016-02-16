@@ -18,7 +18,7 @@ public class Leavegame implements CommandExecutor{
 		Player player = (Player) sender;
 		
 		Location l = new Location(player.getWorld(), 0, 64, 0);
-		player.sendMessage(ChatColor.RED + "You leave the match !");
+		player.sendMessage(ChatColor.RED + "You left the match !");
 		player.teleport(l);
 		return true;
 	}
