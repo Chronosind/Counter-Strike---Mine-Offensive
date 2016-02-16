@@ -6,8 +6,6 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.counterstrike.main.Command.commandHandler;
-
 
 public class CS extends JavaPlugin {
 
@@ -15,7 +13,9 @@ public class CS extends JavaPlugin {
 		PluginDescriptionFile pdfFile = getDescription();
 		Logger logger = Logger.getLogger("CSL");
 
-		Bukkit.getServer().getPluginCommand("cs").setExecutor(new commandHandler());
+		Utils u = new Utils();
+
+		Bukkit.getServer().getPluginCommand("cs").setExecutor(new commandHandler(u));
 		
 		logger.info(pdfFile.getName() + "Has been enabled!(V." + pdfFile.getVersion() + ")");
 	}
