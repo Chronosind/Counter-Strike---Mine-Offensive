@@ -1,0 +1,9 @@
+main: com.counterstrike.main.CS
+version: 0.1
+name : Counter Strike
+
+commands:
+  join:
+     description: Join the match
+  join:
+     description: Leave the match   
