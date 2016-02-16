@@ -1,9 +1,8 @@
 main: com.counterstrike.main.CS
 version: 0.1
-name : Counter Strike
+name: Counter Strike
+authors: BlueRizk, Chronosind
 
 commands:
-  join:
-     description: Join the match
-  join:
-     description: Leave the match   
+  cs:
+    description: Core command of Counter Strike : Mine Offensive plugin
