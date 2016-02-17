@@ -16,6 +16,7 @@ public class CS extends JavaPlugin {
 		Utils u = new Utils();
 
 		Bukkit.getServer().getPluginCommand("cs").setExecutor(new commandHandler(u));
+		Bukkit.getServer().getPluginManager().registerEvents(new clickEvent(u), this);
 		
 		logger.info(pdfFile.getName() + "Has been enabled!(V." + pdfFile.getVersion() + ")");
 	}

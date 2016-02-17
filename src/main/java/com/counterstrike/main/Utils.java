@@ -2,12 +2,14 @@ package com.counterstrike.main;
 
 import java.util.HashMap;
 import java.util.Random;
+import java.util.UUID;
 
 public class Utils {
 
 	Random rng;
 
-	HashMap<String, arenaSettings> arenas = new HashMap<String, arenaSettings>();
+	private HashMap<String, arenaSettings> arenas = new HashMap<String, arenaSettings>();
+	private HashMap<UUID, String> state = new HashMap<UUID, String>();
 
 	public Utils(){
 		rng = new Random();
@@ -24,5 +26,17 @@ public class Utils {
 	public void removeArena(String name){
 		arenas.get(name).clear();
 		arenas.remove(name);
+	}
+
+	public boolean getState(UUID uuid){
+		return state.get(uuid) != null;
+	}
+
+	public String getArenaState(UUID uuid){
+		return state.get(uuid);
+	}
+
+	public void setState(UUID uuid, String set){
+		state.put(uuid, set);
 	}
 }

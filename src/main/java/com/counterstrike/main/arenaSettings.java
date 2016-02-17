@@ -6,12 +6,12 @@ import org.bukkit.World;
 import java.util.ArrayList;
 
 public class arenaSettings {
-	World arenaWorld;
+	private World arenaWorld;
 
-	ArrayList<Location> redPoint;
-	ArrayList<Location> bluePoint;
+	private ArrayList<Location> redPoint;
+	private ArrayList<Location> bluePoint;
 
-	Utils utils;
+	private Utils utils;
 
 	public arenaSettings(Utils u){utils = u;}
 
@@ -37,5 +37,9 @@ public class arenaSettings {
 		arenaWorld = null;
 		redPoint = null;
 		bluePoint = null;
+	}
+
+	public World getArenaWorld(){
+		return arenaWorld;
 	}
 }
