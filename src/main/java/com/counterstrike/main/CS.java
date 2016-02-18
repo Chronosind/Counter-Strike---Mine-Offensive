@@ -1,10 +1,10 @@
 package com.counterstrike.main;
 
-import java.util.logging.Logger;
-
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import java.util.logging.Logger;
 
 
 public class CS extends JavaPlugin {
@@ -15,8 +15,8 @@ public class CS extends JavaPlugin {
 
 		Utils u = new Utils();
 
-		Bukkit.getServer().getPluginCommand("cs").setExecutor(new commandHandler(u));
-		Bukkit.getServer().getPluginManager().registerEvents(new clickEvent(u), this);
+		Bukkit.getServer().getPluginCommand("cs").setExecutor(new commandHandler());
+		Bukkit.getServer().getPluginManager().registerEvents(new clickEvent(), this);
 		
 		logger.info(pdfFile.getName() + "Has been enabled!(V." + pdfFile.getVersion() + ")");
 	}

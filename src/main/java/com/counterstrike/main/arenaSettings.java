@@ -6,6 +6,7 @@ import org.bukkit.World;
 import java.util.ArrayList;
 
 public class arenaSettings {
+	private boolean started = false;
 	private World arenaWorld;
 
 	private ArrayList<Location> redPoint;
@@ -13,14 +14,14 @@ public class arenaSettings {
 
 	private Utils utils;
 
-	public arenaSettings(Utils u){utils = u;}
+	private int playerCount = 0;
 
 	public Location getRandomRed(){
-		return (redPoint.get(utils.rng.nextInt(bluePoint.size())));
+		return (redPoint.get(Utils.rng.nextInt(bluePoint.size())));
 	}
 
 	public Location getRandomBlue(){
-		return (bluePoint.get(utils.rng.nextInt(bluePoint.size())));
+		return (bluePoint.get(Utils.rng.nextInt(bluePoint.size())));
 	}
 
 	public void addRedPoint(Location loc, World w){
@@ -41,5 +42,21 @@ public class arenaSettings {
 
 	public World getArenaWorld(){
 		return arenaWorld;
+	}
+
+	public boolean hasStarted() {
+		return started;
+	}
+
+	public void addPlayerCount() {
+		playerCount++;
+	}
+
+	public void decPlayerCount() {
+		playerCount--;
+	}
+
+	public int getPlayerCount() {
+		return playerCount;
 	}
 }

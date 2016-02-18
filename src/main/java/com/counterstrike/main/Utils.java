@@ -6,37 +6,43 @@ import java.util.UUID;
 
 public class Utils {
 
-	Random rng;
+	static Random rng = new Random();
+	private static HashMap<String, arenaSettings> arenas = new HashMap<String, arenaSettings>();
+	private static HashMap<UUID, String> state = new HashMap<UUID, String>();
+	private static HashMap<UUID, String> gameState = new HashMap<UUID, String>();
+	final int minPlayers = 2;
+	final int countDown = 180; /* Seconds */
 
-	private HashMap<String, arenaSettings> arenas = new HashMap<String, arenaSettings>();
-	private HashMap<UUID, String> state = new HashMap<UUID, String>();
-
-	public Utils(){
-		rng = new Random();
-	}
-
-	public arenaSettings getArenaByName(String name){
+	public static arenaSettings getArenaByName(String name) {
 		return arenas.get(name);
 	}
 
-	public void addArena(String name, arenaSettings set){
+	public static void addArena(String name, arenaSettings set) {
 		arenas.put(name, set);
 	}
 
-	public void removeArena(String name){
+	public static void removeArena(String name) {
 		arenas.get(name).clear();
 		arenas.remove(name);
 	}
 
-	public boolean getState(UUID uuid){
+	public static boolean getState(UUID uuid) {
 		return state.get(uuid) != null;
 	}
 
-	public String getArenaState(UUID uuid){
+	public static String getArenaState(UUID uuid) {
 		return state.get(uuid);
 	}
 
-	public void setState(UUID uuid, String set){
+	public static void setState(UUID uuid, String set) {
 		state.put(uuid, set);
+	}
+
+	public static String getGameState(UUID uuid) {
+		return gameState.get(uuid);
+	}
+
+	public static void setGameState(UUID uuid, String aname) {
+		gameState.put(uuid, aname);
 	}
 }
