@@ -1,4 +1,4 @@
-package com.counterstrike.main;
+package main.java.com.counterstrike.main;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginDescriptionFile;
@@ -13,7 +13,6 @@ public class CS extends JavaPlugin {
 		PluginDescriptionFile pdfFile = getDescription();
 		Logger logger = Logger.getLogger("CSL");
 
-		Utils u = new Utils();
 
 		Bukkit.getServer().getPluginCommand("cs").setExecutor(new commandHandler());
 		Bukkit.getServer().getPluginManager().registerEvents(new clickEvent(), this);

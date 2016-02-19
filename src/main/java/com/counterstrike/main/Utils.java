@@ -1,4 +1,4 @@
-package com.counterstrike.main;
+package main.java.com.counterstrike.main;
 
 import java.util.HashMap;
 import java.util.Random;
@@ -10,7 +10,7 @@ public class Utils {
 	private static HashMap<String, arenaSettings> arenas = new HashMap<String, arenaSettings>();
 	private static HashMap<UUID, String> state = new HashMap<UUID, String>();
 	private static HashMap<UUID, String> gameState = new HashMap<UUID, String>();
-	final int minPlayers = 2;
+	final static int minPlayers = 2;
 	final int countDown = 180; /* Seconds */
 
 	public static arenaSettings getArenaByName(String name) {

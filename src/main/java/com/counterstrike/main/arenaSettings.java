@@ -1,4 +1,4 @@
-package com.counterstrike.main;
+package main.java.com.counterstrike.main;
 
 import org.bukkit.Location;
 import org.bukkit.World;
@@ -12,7 +12,6 @@ public class arenaSettings {
 	private ArrayList<Location> redPoint;
 	private ArrayList<Location> bluePoint;
 
-	private Utils utils;
 
 	private int playerCount = 0;
 

@@ -1,4 +1,4 @@
-package com.counterstrike.main;
+package main.java.com.counterstrike.main;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
