@@ -1,4 +1,4 @@
-package main.java.com.counterstrike.main;
+package com.counterstrike.main;
 
 import java.util.HashMap;
 import java.util.Random;

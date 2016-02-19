@@ -1,7 +1,6 @@
 main: main.java.com.counterstrike.main.CS
 version: 0.1
 name: Counter Strike
-authors: BlueRizk, Chronosind
 
 commands:
   cs:

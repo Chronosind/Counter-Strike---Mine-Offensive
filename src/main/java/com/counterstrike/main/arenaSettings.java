@@ -1,4 +1,4 @@
-package main.java.com.counterstrike.main;
+package com.counterstrike.main;
 
 import org.bukkit.Location;
 import org.bukkit.World;
