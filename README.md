@@ -29,4 +29,8 @@ We don't think our coding skill/style is good enough to teach others, so...
 We're still newbs at this, but we're trying to learn from experiences, so you can tell us by PM or any other means.
 
 ####I have other questions, where/whom should I ask?
-You can contact us at facebook. (We will attach the link ASAP)
+You can contact us at facebook. (Link Attatched)
+Chronosind: https://www.facebook.com/profile.php?id=100010043820536&fref=ts
+Ryanz12: https://www.facebook.com/profile.php?id=100008683145338&fref=ts (Most online user)
+Reynardo: https://www.facebook.com/reynardo.ew?fref=ts
+
