@@ -10,7 +10,7 @@ public class arenaLeaveEvent extends Event {
 	public arenaLeaveEvent(arenaSettings as) {
 		as.decPlayerCount();
 		if (as.getPlayerCount() < Utils.minPlayers) {
-			/* TODO: Cancel countdown */
+			countdown.cancelCountdown(as.getName());
 		}
 	}
 

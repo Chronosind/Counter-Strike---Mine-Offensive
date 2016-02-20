@@ -12,8 +12,12 @@ public class arenaSettings {
 	private ArrayList<Location> redPoint;
 	private ArrayList<Location> bluePoint;
 
-
 	private int playerCount = 0;
+
+	String name;
+
+	public void setName(String n){ name = n;}
+	public String getName(){ return name; }
 
 	public Location getRandomRed(){
 		return (redPoint.get(Utils.rng.nextInt(bluePoint.size())));

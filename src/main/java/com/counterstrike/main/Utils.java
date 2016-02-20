@@ -11,7 +11,7 @@ public class Utils {
 	private static HashMap<UUID, String> state = new HashMap<UUID, String>();
 	private static HashMap<UUID, String> gameState = new HashMap<UUID, String>();
 	final static int minPlayers = 2;
-	final int countDown = 180; /* Seconds */
+	final static int countDown = 180; /* Seconds */
 
 	public static arenaSettings getArenaByName(String name) {
 		return arenas.get(name);
@@ -19,6 +19,7 @@ public class Utils {
 
 	public static void addArena(String name, arenaSettings set) {
 		arenas.put(name, set);
+		set.setName(name);
 	}
 
 	public static void removeArena(String name) {

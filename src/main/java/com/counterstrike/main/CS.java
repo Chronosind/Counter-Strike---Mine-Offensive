@@ -9,21 +9,18 @@ import java.util.logging.Logger;
 
 public class CS extends JavaPlugin {
 
+	private Logger logger;
+
 	public void onEnable(){
-		PluginDescriptionFile pdfFile = getDescription();
-		Logger logger = Logger.getLogger("CSL");
+		logger = getLogger();
 
 
-		Bukkit.getServer().getPluginCommand("cs").setExecutor(new commandHandler());
+		Bukkit.getServer().getPluginCommand("cs").setExecutor(new commandHandler(this));
 		Bukkit.getServer().getPluginManager().registerEvents(new clickEvent(), this);
-		
-		logger.info(pdfFile.getName() + "Has been enabled!(V." + pdfFile.getVersion() + ")");
+
+		logger.info("Plugin successfully enabled!");
 	}
 	public void onDisable(){
-		PluginDescriptionFile pdfFile = getDescription();
-		Logger logger = Logger.getLogger("CSL");
-		
-		logger.info(pdfFile.getName() + "Has been disabled!(V." + pdfFile.getVersion() + ")");
 	}
 
  }
