@@ -31,11 +31,11 @@ We're still newbs at this, but we're trying to learn from experiences, so you ca
 ####I have other questions, where/whom should I ask?
 You can contact us at facebook. (Link Attatched)
 
-Chronosind: https://www.facebook.com/profile.php?id=100010043820536&fref=ts
+[Chronosind](https://www.facebook.com/profile.php?id=100010043820536&fref=ts)
 
 
-Ryanz12/BlueRizk: https://www.facebook.com/profile.php?id=100008683145338&fref=ts (Most online user)
+[Ryanz12/BlueRizk](https://www.facebook.com/profile.php?id=100008683145338&fref=ts) (Most online user)
 
 
-Reynardo: https://www.facebook.com/reynardo.ew?fref=ts
+[Reynardo](https://www.facebook.com/reynardo.ew?fref=ts)
 
