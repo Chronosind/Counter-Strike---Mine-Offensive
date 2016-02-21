@@ -6,12 +6,12 @@ import java.util.UUID;
 
 public class Utils {
 
+	final static int minPlayers = 2;
+	final static int countDown = 180; /* Seconds */
 	static Random rng = new Random();
 	private static HashMap<String, arenaSettings> arenas = new HashMap<String, arenaSettings>();
 	private static HashMap<UUID, String> state = new HashMap<UUID, String>();
 	private static HashMap<UUID, String> gameState = new HashMap<UUID, String>();
-	final static int minPlayers = 2;
-	final static int countDown = 180; /* Seconds */
 
 	public static arenaSettings getArenaByName(String name) {
 		return arenas.get(name);
@@ -45,5 +45,9 @@ public class Utils {
 
 	public static void setGameState(UUID uuid, String aname) {
 		gameState.put(uuid, aname);
+	}
+
+	public static HashMap getArenas() {
+		return arenas;
 	}
 }

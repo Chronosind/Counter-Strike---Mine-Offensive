@@ -1,8 +1,9 @@
 main: com.counterstrike.main.CS
 version: 0.1
-name: Counter Strike
+name: CSMO
 authors: [BlueRizk, Chronosind, Reynardo]
 
 commands:
   cs:
     description: Core command of Counter-Strike Mine-Offensive
+    usage: /<command> [args]

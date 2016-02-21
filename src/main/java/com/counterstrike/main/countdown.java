@@ -34,4 +34,8 @@ public class countdown {
 	public static void cancelCountdown(String arenaName){
 		bs.cancelTask(taskId.get(arenaName));
 	}
+
+	public static boolean hasStarted(String arenaName) {
+		return bs.isCurrentlyRunning(taskId.get(arenaName));
+	}
 }
