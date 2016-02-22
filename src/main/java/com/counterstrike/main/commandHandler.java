@@ -66,7 +66,7 @@ public class commandHandler implements CommandExecutor {
 								/* There is an arena with the name specified */
 								if (Utils.getGameState(p.getUniqueId()) == null) {
 									if (!as.hasStarted()) {
-										arenaJoinEvent aje = new arenaJoinEvent(Utils.getArenaByName(arenaName), plugin);
+										arenaJoinEvent aje = new arenaJoinEvent(Utils.getArenaByName(arenaName), plugin, p);
 										Bukkit.getServer().getPluginManager().callEvent(aje);
 										p.sendMessage("You have joined arena " + arenaName + "!");
 										p.sendMessage("You will be teleported to arena as soon as the game is started. Be patient!");

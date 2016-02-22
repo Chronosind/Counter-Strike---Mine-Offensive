@@ -1,7 +1,6 @@
 package com.counterstrike.main;
 
 import org.bukkit.Bukkit;
-import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.logging.Logger;

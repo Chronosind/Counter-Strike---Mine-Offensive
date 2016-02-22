@@ -10,10 +10,10 @@ import java.util.Iterator;
 import java.util.UUID;
 
 public class arenaSettings {
-	HashSet<UUID> redTeam = new HashSet<UUID>();
-	HashSet<UUID> blueTeam = new HashSet<UUID>();
-	HashSet<UUID> players = new HashSet<UUID>();
-	String name;
+	private final HashSet<UUID> redTeam = new HashSet<UUID>();
+	private final HashSet<UUID> blueTeam = new HashSet<UUID>();
+	private final HashSet<UUID> players = new HashSet<UUID>();
+	private String name;
 	private boolean started = false;
 	private World arenaWorld;
 	private ArrayList<Location> redPoint;
