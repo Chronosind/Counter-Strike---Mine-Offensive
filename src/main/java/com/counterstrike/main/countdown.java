@@ -24,6 +24,7 @@ public class countdown {
 				counter--;
 				if(counter <= 0){
 					bs.cancelTask(taskId.get(as.getName()));
+					as.arenaStart();
 				}
 			}
 		}, 0L, 20L);

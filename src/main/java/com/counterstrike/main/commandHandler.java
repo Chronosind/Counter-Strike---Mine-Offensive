@@ -34,14 +34,14 @@ public class commandHandler implements CommandExecutor {
 					if(args.length == 1) {
 						if (args[0].equalsIgnoreCase("leave")) {
 						/* Sub-command is leave (i.e. /cs leave) */
-							if (Utils.getGameState(p.getUniqueId()) != null) {
+							if (Utils.getGameState(p.getUniqueId()) != null && !Utils.getArenaByName(Utils.getGameState(p.getUniqueId())).hasStarted()) {
 								p.sendMessage("You left the game.");
 								arenaLeaveEvent ale = new arenaLeaveEvent(Utils.getArenaByName(Utils.getGameState(p.getUniqueId())));
 								Bukkit.getServer().getPluginManager().callEvent(ale);
 								Utils.setGameState(p.getUniqueId(), null);
 							}
 							else {
-								p.sendMessage("You are not in any game!");
+								p.sendMessage("You are not in any game, or your game has already started!");
 							}
 						}
 						else if (args[0].equalsIgnoreCase("status")) {
