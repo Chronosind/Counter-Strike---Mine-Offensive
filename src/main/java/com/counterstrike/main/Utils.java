@@ -11,7 +11,7 @@ public class Utils {
 	static Random rng = new Random();
 	private static HashMap<String, arenaSettings> arenas = new HashMap<String, arenaSettings>();
 	private static HashMap<UUID, String> state = new HashMap<UUID, String>();
-	private static HashMap<UUID, String> gameState = new HashMap<UUID, String>();
+	private static HashMap<UUID, String> gameState = new HashMap<UUID, String>(); //how to un andjjdbadon shit
 
 	public static arenaSettings getArenaByName(String name) {
 		return arenas.get(name);
