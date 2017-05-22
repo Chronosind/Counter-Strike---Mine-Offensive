@@ -1,4 +1,6 @@
-# Counter-Strike Mine-Offensive
+# Counter-Strike Mine-Offensive * ABANDONED * 
+Feel free to continue this project. :) 
+Contact me first *for documentation
 A Spigot plugin.
 [ABANDONED]
 
