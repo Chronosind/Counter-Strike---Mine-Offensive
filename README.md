@@ -1,5 +1,6 @@
 # Counter-Strike Mine-Offensive
 A Spigot plugin.
+[ABANDONED]
 
 ####What is it?
 As you can see, it is a counter-strike attempt on spigot without any client mods. The aim is to practice making spigot plugin, and, at the same time, write an awesome plugin.
